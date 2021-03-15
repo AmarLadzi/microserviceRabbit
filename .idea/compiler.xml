@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="worl_producer" />
+        <module name="world_consumer" />
+        <module name="translation_consumer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="translation_consumer" target="1.8" />
+      <module name="worl_producer" target="1.8" />
+      <module name="world_consumer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="translation_consumer" options="-parameters" />
+      <module name="worl_producer" options="-parameters" />
+      <module name="world_consumer" options="-parameters" />
+    </option>
+  </component>
+</project>
